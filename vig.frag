@@ -24,10 +24,6 @@ void rgb(float r, float g, float b){
 void rgb(float a){
 	gl_FragColor.rgb = vec3(a);
 }
-void flip(){
-	
-	gl_FragColor.rgb = 1.0-gl_FragColor.rgb;
-}
 
 void vignetteSetFinal(float len, float inner, float outer){
 	
