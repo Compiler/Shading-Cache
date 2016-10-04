@@ -29,13 +29,18 @@ void flip(){
 	gl_FragColor.rgb = 1.0-gl_FragColor.rgb;
 }
 
+void vignetteSetFinal(float len, float inner, float outer){
+	
+	rgb(smoothstep(outer, inner, (len * 2.0)));
+}
+
 void main( void ) {
 
 	vec2 position = ( gl_FragCoord.xy / resolution.xy ) -+ mouse;
 
 	
 	float len = length(position);
-	rgb(smoothstep(0.85, 0.5, (len * 2.0)));
-
+	
+	vignetteSetFinal(len, 0.5, 0.85);
 
 }
