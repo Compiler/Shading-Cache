@@ -23,7 +23,7 @@ void main( void ) {
 	if(ds < 0.0){
 		r = 1.0 - ds;
 	}else{
-		b = ds;
+		b = ds * 1.1;
 	}
 		
 	r = mix(sin(time) / 1.0,b, r);
