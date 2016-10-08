@@ -13,7 +13,7 @@ void main( void ) {
 
 	vec2 position = ( gl_FragCoord.xy / resolution.xy );
 	float brightness = 0.5;
-	float creep = 0.05;
+	float creep = 0.0456;
 	gl_FragColor.rgb = vec3(smoothstep(creep, brightness, mod(15.0, 1.0-position.y)), smoothstep(creep - 0.2, brightness * 3.0, mod(5.0, 1.0-position.y)), 0.0);
 		
 
