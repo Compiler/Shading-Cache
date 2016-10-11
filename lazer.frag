@@ -17,15 +17,18 @@ void main( void ) {
 	float r = 0.0;float g = 0.0;float b = 0.0;
 	
 
+       //The value that divides and slows the cos of time
 	float val = (100.0);
+	//A scaler value in case I wish to scale
 	float ins = 1.0;
+	//Sub-mita value
 	float subber = cos(time) * ins;
 	r = smoothstep(0.025+ cos(time) / val, 0.0005 + cos(time) / val, length(atan(position.x - subber)));
 	b = smoothstep(0.055+ cos(time) / val, 0.0025 + cos(time) / val, length(position.x - subber));
 	g = smoothstep(0.025+ cos(time) / val, 0.005 + cos(time) / val, length(position.x - subber));
 	
-	r+= .1;
 	
+	//conditional to switch colors a bit
 	if(sin((time)) < 0.5){
 		gl_FragColor.rgb = vec3(r,g,b);
 	}else if(sin((time)) < 0.25){
