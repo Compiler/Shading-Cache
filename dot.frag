@@ -8,7 +8,7 @@ uniform vec2 resolution;
 //Ashok Gowtham M
 #define pi 3.1415926536
 #define N 20
-#define starComplexity 47000.0
+#define starComplexity 4700000.0
 
 void main( void ) {
 
@@ -29,6 +29,6 @@ void main( void ) {
 		float a1 = atan(xy.x,xy.y);
 		c+=pow(200000.,(1.-r1*2./r+sin(a1*starComplexity-time*10.)*.1)*(0.80+0.25*pow(fract(float(-i)/float(N)-time*.55),2.5)))/10000.0;
 	}
-	gl_FragColor = vec4( (c)*vec3(0.01+sin(time)*3.,.015,.02),1.0 );
+	gl_FragColor = vec4( (c)*vec3(0.01+sin(time)*3.,0.015+sin(time),.02),1.0 );
 
 }
