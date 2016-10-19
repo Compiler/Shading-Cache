@@ -8,7 +8,7 @@ uniform vec2 resolution;
 //Ashok Gowtham M
 #define pi 3.1415926536
 #define N 20
-#define starComplexity 4700000.0
+#define starComplexity 60.0
 
 void main( void ) {
 
