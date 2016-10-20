@@ -5,7 +5,6 @@ precision mediump float;
 uniform float time;
 uniform vec2 mouse;
 uniform vec2 resolution;
-//Ashok Gowtham M
 #define pi 3.1415926536
 #define N 20
 #define starComplexity 60.0
