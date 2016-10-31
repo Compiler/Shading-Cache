@@ -1,3 +1,11 @@
+//I DO NOT OWN THIS CODE I HAVE THIS IN MY GITHUB AS A 
+// GOOD SHADER TO LOOK ON ALL CREDIT GOES TO inigo quilez - iq/2013
+
+
+
+
+
+
 #ifdef GL_ES
 precision highp float;
 #endif
